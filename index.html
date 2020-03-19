@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello!</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <title>Mike's Nikes | Perfomance Shoe Reviews</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="/style.css" />
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
-  <body>
-    <h1>Sneaker Review</h1>
-    <p>
-      <a href="about.html">About</a>
-    </p>
     
-    <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
-    </p>
+<!--     Note: Move the internal css style rules into the external css file (style.css) -->
+    <style type="text/css">
+      h1{
+        text-position: center center;
+      }
+      header{
+        text-align: center;
+      }
+      a:hover{
+        color: black;
+      }
+      /*   Note: How to use CSS background Property
+          https://www.w3schools.com/cssref/css3_pr_background.asp
+      */
+      .hero {
+/*         background: transparent url("https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-17%20at%207.02.59%20PM.png?v=1584490322922") no-repeat center; */
+        background-color: transparent;
+        background-image: url("https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-17%20at%207.02.59%20PM.png?v=1584490322922");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- This section is the site's navigation menu  -->
+        <!-- Note: Usig the unordered list block to create menu list items  -->
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="review.html">Performance Reviews</a></li>
+          <li><a href="news.html">Sneaker News</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <div class="hero">
+        <h1>Home of the World's best sneaker reviews</h1>
+        <p></p>
+      </div>
+    </main>
+    <footer>&copy; 2020</footer>
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>

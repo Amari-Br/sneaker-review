@@ -8,60 +8,193 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-    
-<!--     Note: Move the internal css style rules into the external css file (style.css) -->
+
+    <!--     Note: Move the internal css style rules into the external css file (style.css) -->
     <style type="text/css">
-      h1{
+      h1 {
         text-position: center center;
       }
-      header{
+      header {
         text-align: center;
       }
-      a:hover{
+      a:hover {
         color: black;
       }
       /*   Note: How to use CSS background Property
           https://www.w3schools.com/cssref/css3_pr_background.asp
       */
       .hero {
-/*         background: transparent url("https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-17%20at%207.02.59%20PM.png?v=1584490322922") no-repeat center; */
+        /*         background: transparent url("https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-17%20at%207.02.59%20PM.png?v=1584490322922") no-repeat center; */
         background-color: transparent;
         background-image: url("https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-17%20at%207.02.59%20PM.png?v=1584490322922");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        padding: 5%;
+        padding: 15% 10%;
       }
     </style>
   </head>
   <body>
     <header>
-      <nav>
-        <!-- This section is the site's navigation menu  -->
-        <!-- Note: Usig the unordered list block to create menu list items  -->
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="review.html">Performance Reviews</a></li>
-          <li><a href="news.html">Sneaker News</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="Mike's-brand" href="index.html">Navbar </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">reviews</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
-      <div class="hero">
-        <h1>Home of the World's best sneaker reviews</h1>
-        <p></p>
+      <div class="jumbotron jumbotron-fluid hero"></div>
+      <div class="container">
+        <h1 class="display-4">Home of the World's Best Sneaker Reviews</h1>
+        <p class="lead">
+          ***This is a modified jumbotron that occupies the entire horizontal
+          space of its parent.***
+        </p>
+      </div>
+      <div class="row">
+        <div class="card-column">
+          <div class="column">
+            <div class="card" style="width: 18rem;">
+              <span class="border border-dark"
+                ><img
+                  src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%207.34.43%20PM.png?v=1585006513989"
+                  class="card-img-top"
+                  alt="Kyrie-5"
+              /></span>
+              <div class="card-body">
+                <h5 class="card-title">Nike Kyrie 5 Performance Review</h5>
+                <p class="card-text">
+                  If you'd like to enjoy all the benefits of a lighter shoe with
+                  some stellar impact protection, then the look no further, the
+                  Nike Kyrie 5 is the shoe for you...
+                </p>
+                <a href="reviews.html" class="btn btn-primary"
+                  >Full Description</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="width: 18rem;">
+          <span class="border border-dark"
+            ><img
+              src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%207.55.27%20PM.png?v=1585007761810"
+              class="card-img-top"
+              alt="Lebron-17"
+          /></span>
+          <div class="card-body">
+            <h5 class="card-title">
+              Nike Lebron 17 Performance Review
+            </h5>
+
+            <p class="card-text">
+              Nike set the tone with it's release of both the Lebron 16 and
+              Lebron 16 low last year. Did they exceed this standard with the
+              Lebron 17? Only one way to find out...
+            </p>
+            <a href="reviews.html" class="btn btn-primary">Full Description</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="width: 18rem;">
+          <span class="border border-dark"
+            ><img
+              src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%208.39.41%20PM.png?v=1585010837990 "
+              class="card-img-top"
+              alt="KD-12"
+          /></span>
+          <div class="card-body">
+            <h5 class="card-title">Nike KD 12</h5>
+            <p class="card-text">
+              Looking for ultimate comfort, minimal break-in time, and light yet
+              supportive upper? then the Nike Lebron 17 is certaintly the shoe
+              for you!
+            </p>
+            <a href="reviews.html" class="btn btn-primary">Full Description</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" style="width: 18rem;">
+          <span class="border border-dark"
+            ><img
+              src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%209.04.54%20PM.png?v=1585011921242 "
+              class="card-img-top"
+              alt="Adapt-BB"
+          /></span>
+          <div class="card-body">
+            <h5 class="card-title">Nike Adapt BB 2.0</h5>
+            <p class="card-text">
+              The Adapt BB 2.0 is nike new self-lacing shoe. Nike new
+              innnovative design is like no other and simply ahead of its
+              time.Hate or love it, you simply gotta respect what Nike's done
+              with the Adapt BB 2.0.
+            </p>
+            <a href="reviews.html" class="btn btn-primary">Full Description</a>
+          </div>
+        </div>
       </div>
     </main>
+
     <footer>&copy; 2020</footer>
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

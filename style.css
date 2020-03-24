@@ -9,3 +9,25 @@ h1 {
   font-style: italic;
   color: #373fff;
 }
+h1 {
+  text-align: center;
+}
+header {
+  text-align: center;
+}
+a:hover {
+  color: black;
+}
+/*   Note: How to use CSS background Property
+          https://www.w3schools.com/cssref/css3_pr_background.asp
+      */
+.hero {
+  /*         background: transparent url("https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-17%20at%207.02.59%20PM.png?v=1584490322922") no-repeat center; */
+  background-color: transparent;
+  background-image: url("https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-17%20at%207.02.59%20PM.png?v=1584490322922");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 15% 10%;
+  height: 50vh;
+}

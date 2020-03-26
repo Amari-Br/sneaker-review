@@ -1,22 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ovo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Graduate&display=swap");
+
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  font-family: Graduate, Bold;
+  margin: 0;
 }
-
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: #f5824a;
+}
+.bg-dark {
+  background-color: #343a40;
+}
 h1 {
   font-style: italic;
-  color: #373fff;
+  color: black;
+  text-align: center;
+  text-decoration: underline;
 }
-h1 {
+.mission {
   text-align: center;
 }
 header {
   text-align: center;
 }
-a:hover {
-  color: black;
+nav a {
+  color: #F5824A;
+  text-decoration: line-through;
+  background-color: transparent;
+}
+.Mission a {
+  color: #F5824A;
+}
+
+ul li a {
+  color: #F5824A;
+  text-decoration: none;
+  background-color: transparent;
 }
 /*   Note: How to use CSS background Property
           https://www.w3schools.com/cssref/css3_pr_background.asp
@@ -30,4 +53,181 @@ a:hover {
   background-position: center center;
   padding: 15% 10%;
   height: 50vh;
+}
+
+#hero.jumbotron h1,
+.hero h1 {
+  color: black;
+  text-align: center;
+  font-family: Graduate;
+}
+
+.jumbotron {
+  padding: 0;
+  background-color: #F5824A;
+}
+h5 {
+  font-family: "Permanent Marker";
+  font-weight: 500;
+}
+/* 
+  # = id
+  . = class 
+*/
+#hero.jumbotron {
+  padding: 0;
+  background-color: #F5824A;
+}
+
+.btn-primary {
+  background-color: #F5824A;
+  border-color: #F5824A;
+}
+
+.btn-primary {
+  text-decoration: none;
+  font-family: "Permanent Marker";
+}
+.btn2 {
+  text-decoration: none;
+  font-family: "Permanent Marker";
+  background-color: #F5824A;
+  border-color: #F5824A;
+  float: right;
+  font-size: xx-large;
+}
+
+.container-2 {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-auto-rows: auto;
+
+  grid-gap: 1rem;
+}
+
+.container-2 {
+  border: 2px solid #e7e7e7;
+
+  border-radius: 4px;
+
+  padding: 0.5rem;
+}
+
+#reviews .card {
+  color: white;
+  background-color: black;
+}
+#reviews .card:first-child {
+  color: white;
+  background-color: black;
+}
+
+footer {
+  font-family: "Ovo";
+  font-weight: bold;
+}
+div .list {
+  text-align: center;
+}
+.list ul {
+  display: inline-block;
+  text-align: left;
+}
+.note {
+  text-align: right;
+  display: inline-block;
+  float: right;
+  text-align: left;
+}
+/* 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+margin: 5px 2px; } */
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  float: right;
+  font-size: xx-large;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  float: right;
+  font-size: xx-large;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  float: right;
+  font-size: xx-large;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+  float: right;
+  font-size: xx-large;
+}
+/* Style the form element with a border around it */
+form {
+  border: 4px solid #f1f1f1;
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+body {
+  min-height: 100%;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }

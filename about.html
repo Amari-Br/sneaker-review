@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello!</title>
+    <title>Mike's Nikes | Perfomance Shoe Reviews</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -14,18 +14,191 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <style type="text/css"></style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="Mike's-brand" href="index.html">MN</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </head>
   <body>
-    <h1>Sneaker Review</h1>
-    <p>
-      The purpose of this website is primary, to provide a credible and
-      trustworthy performance review source for athletes across the globe.
-    </p>
-    <footer>&copy; 2020</footer>
+    <main>
+      <h1>Mission Statement</h1>
+      <div class="mission">
+        <p>
+          The purpose of this website is primary, to provide a credible and
+          <br />
+          trustworthy performance review source for athletes across the
+          globe.<br />
+          Here at Mike's Nikes Inc. we do not seek to mass-produce material at a
+          rapid pace, rather, <br />
+          our mission is to produce quality reviews and content. We also pride
+          ourselves on providing our viewers/visitors <br />
+          with an unforgettable experience. With that being said, subscribe to
+          our newsletter to receive updates <br />
+          regarding our brand, website, and other major events occuring in the
+          sneaker world.<br />
+          Ultimately, it is our job to satisfy your needs. If you, for any
+          reason, aren't satisfied with our services, <br />
+          please do not hesitate to call us at
+          <a href="tel:555-0128">(555)-0128 </a> or contact us via email at
+          <a href="mailto:customersupport@Mikesnikes.com"
+            >customersupport@Mikesnikes.com.</a
+          >
+        </p>
+      </div>
+      <form action="action_page.php">
+        <div id="subscribe" class="container">
+          <h2>Subscribe for Updates</h2>
+        </div>
+
+        <div class="container" style="background-color: #f5824a">
+          <input type="text" placeholder="Name" name="name" required />
+          <input type="text" placeholder="Email address" name="mail" required />
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe" />
+            Daily Updates
+          </label>
+        </div>
+
+        <div class="container" style="background-color: #f5824a">
+          <input type="submit" value="Subscribe" href="#" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="card-header">Other Links/Sources</h5>
+              <div class="card-body">
+                <div class="card-text">
+                  <ul class="list-inline">
+                    <li><a target="_blank" href="#">Contact Us</a></li>
+                    <li><a href="reviews.html">Sponsorships</a></li>
+                    <li>Jobs/Careers</li>
+                  </ul>
+                  <!--                   <ul class="list-inline">
+                    <li class="list-inline-item">Lorem ipsum</li>
+                    <li class="list-inline-item">Phasellus iaculis</li>
+                    <li class="list-inline-item">Nulla volutpat</li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <ul class="list-unstyled">
+              <li>
+                <a target="_blank" href="https://news.nike.com/news">News</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.nike.com/promo-code"
+                  >Promotions</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://www.osha.gov/laws-regs"
+                  >OSHA: Laws and Regulations</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.nysenate.gov/legislation/bills/2019/s6282>"
+                  >NY Supply Chains Act</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <div id="note" class="note">
+              <p>
+                Note: If our site is a source or channel for a<br />
+                purchase made on an affiliated website, we may receive<br />
+                a portion of the purchase amount by way of affiliation.<br />
+                This commission is used to compensate employees, manage the
+                website, and enhance overall content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <ul class="list-inline">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://twitter.com/explore"
+                  class="fa p-2 fa-twitter mx-2"
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/"
+                  class="fa p-2 fa-linkedin mx-2"
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/"
+                  class="fa p-2 fa-youtube mx-2"
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/"
+                  class="fa p-2 fa-instagram mx-2"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button style="font-size:24px">
+        Select Location<i class="fa p-2 fa-map-marker"></i>
+      </button>
+      <a target="_blank" href="#subscribe" class="btn btn-primary">Subscribe</a>
+      Copyright &copy; 2020
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

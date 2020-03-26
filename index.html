@@ -14,6 +14,10 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
@@ -21,34 +25,11 @@
     <script src="/script.js" defer></script>
 
     <!--     Note: Move the internal css style rules into the external css file (style.css) -->
-    <style type="text/css">
-      h1 {
-        text-position: center center;
-      }
-      header {
-        text-align: center;
-      }
-      a:hover {
-        color: black;
-      }
-      /*   Note: How to use CSS background Property
-          https://www.w3schools.com/cssref/css3_pr_background.asp
-      */
-      .hero {
-        /*         background: transparent url("https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-17%20at%207.02.59%20PM.png?v=1584490322922") no-repeat center; */
-        background-color: transparent;
-        background-image: url("https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-17%20at%207.02.59%20PM.png?v=1584490322922");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        padding: 15% 10%;
-      }
-    </style>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="Mike's-brand" href="index.html">Navbar </a>
+        <a class="Mike's-brand" href="index.html">MN</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -71,32 +52,42 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="reviews.html">reviews</a>
+              <a class="nav-link" href="reviews.html">Reviews</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main>
-      <div class="jumbotron jumbotron-fluid hero"></div>
-      <div class="container">
-        <h1 class="display-4">Home of the World's Best Sneaker Reviews</h1>
-        <p class="lead">
-          ***This is a modified jumbotron that occupies the entire horizontal
-          space of its parent.***
-        </p>
+    <main id="main">
+      <div id="hero" class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+          <img
+            src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-17%20at%207.02.59%20PM.png?v=1584490322922"
+            class="img-fluid w-100"
+            alt="Responsive image"
+          />
+          <h1 class="display-4">Home of the World's Best Sneaker Reviews</h1>
+          <p class="lead"></p>
+        </div>
       </div>
-      <div class="row">
-        <div class="card-column">
-          <div class="column">
-            <div class="card" style="width: 18rem;">
-              <span class="border border-dark"
-                ><img
-                  src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%207.34.43%20PM.png?v=1585006513989"
-                  class="card-img-top"
-                  alt="Kyrie-5"
-              /></span>
+      <!-- <div class="jumbotron jumbotron-fluid hero">
+        <div class="container">
+          <h1 class="display-4">Home of the World's Best Sneaker Reviews</h1>
+          <p class="lead"></p>
+        </div>
+      </div> -->
+
+      <!-- Bootstrap -->
+      <div id="reviews" class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <div class="card text-white mb-3">
+              <img
+                src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%207.34.43%20PM.png?v=1585006513989"
+                class="card-img-top"
+                alt="Kyrie-5"
+              />
               <div class="card-body">
                 <h5 class="card-title">Nike Kyrie 5 Performance Review</h5>
                 <p class="card-text">
@@ -104,7 +95,76 @@
                   some stellar impact protection, then the look no further, the
                   Nike Kyrie 5 is the shoe for you...
                 </p>
-                <a href="reviews.html" class="btn btn-primary"
+                <a
+                  href="https://amari-sneakers.glitch.me/reviews.html"
+                  class="btn btn-primary"
+                  >Full Description</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="card text-white mb-3">
+              <img
+                src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%208.39.41%20PM.png?v=1585010837990"
+                class="card-img-top"
+                alt="KD-12"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nike KD 12 Performance Review</h5>
+                <p class="card-text">
+                  Looking for ultimate comfort, minimal break-in time, and
+                  light, yet supportive upper? then the Nike KD 12 is certaintly
+                  the shoe for you!
+                </p>
+                <a
+                  href="https://amari-sneakers.glitch.me/reviews.html"
+                  class="btn btn-primary"
+                  >Full Description</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="card text-white mb-3">
+              <img
+                src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%207.55.27%20PM.png?v=1585007761810"
+                class="card-img-top"
+                alt="Lebron-17"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nike Lebron 17 Peformance Review</h5>
+                <p class="card-text">
+                  Nike set the tone with it's release of both the Lebron 16 and
+                  Lebron 16 low last year. Did they exceed this standard with
+                  the Lebron 17? Only one way to find out...
+                </p>
+                <a
+                  href="https://amari-sneakers.glitch.me/reviews.html"
+                  class="btn btn-primary"
+                  >Full Description</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="card text-white mb-3">
+              <img
+                src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%209.04.54%20PM.png?v=1585011921242"
+                class="card-img-top"
+                alt="Adapt-BB"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nike Adapt 2.0 BB Performance Review</h5>
+                <p class="card-text">
+                  The Adapt BB 2.0 is Nike's new self-lacing shoe. Nike's new
+                  innnovative design is like no other, and is simply ahead of
+                  its time.Hate it or love it, you simply gotta respect what
+                  Nike's done with the new Adapt BB 2.0.
+                </p>
+                <a
+                  href="https://amari-sneakers.glitch.me/reviews.html"
+                  class="btn btn-primary"
                   >Full Description</a
                 >
               </div>
@@ -112,70 +172,201 @@
           </div>
         </div>
       </div>
-      <div class="column">
-        <div class="card" style="width: 18rem;">
-          <span class="border border-dark"
-            ><img
-              src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%207.55.27%20PM.png?v=1585007761810"
-              class="card-img-top"
-              alt="Lebron-17"
-          /></span>
-          <div class="card-body">
-            <h5 class="card-title">
-              Nike Lebron 17 Performance Review
-            </h5>
 
-            <p class="card-text">
-              Nike set the tone with it's release of both the Lebron 16 and
-              Lebron 16 low last year. Did they exceed this standard with the
-              Lebron 17? Only one way to find out...
-            </p>
-            <a href="reviews.html" class="btn btn-primary">Full Description</a>
+      <!--  Amari code 
+      <div class="container-2">
+        <div class="row">
+          <div class="card-column">
+            <div class="column">
+              <div
+                class="card text-white bg-secondary mb-3"
+                style="width: 18rem;"
+              >
+                <span class="border border-dark"
+                  ><img
+                    src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%207.34.43%20PM.png?v=1585006513989"
+                    class="card-img-top"
+                    alt="Kyrie-5"
+                /></span>
+                <div class="card-body">
+                  <h5 class="card-title">Nike Kyrie 5 Performance Review</h5>
+                  <p class="card-text">
+                    If you'd like to enjoy all the benefits of a lighter shoe
+                    with some stellar impact protection, then the look no
+                    further, the Nike Kyrie 5 is the shoe for you...
+                  </p>
+                  <a href="reviews.html" class="btn btn-primary"
+                    >Full Description</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card text-white bg-secondary mb-3" style="width: 18rem;">
+            <span class="border border-dark"
+              ><img
+                src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%208.39.41%20PM.png?v=1585010837990 "
+                class="card-img-top"
+                alt="KD-12"
+            /></span>
+            <div class="card-body">
+              <h5 class="card-title">Nike KD 12 Performance Review</h5>
+              <p class="card-text">
+                Looking for ultimate comfort, minimal break-in time, and light
+                yet supportive upper? then the Nike Lebron 17 is certaintly the
+                shoe for you!
+              </p>
+              <a href="reviews.html" class="btn btn-primary"
+                >Full Description</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card text-white bg-secondary mb-3" style="width: 18rem;">
+            <span class="border border-dark"
+              ><img
+                src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%207.55.27%20PM.png?v=1585007761810"
+                class="card-img-top"
+                alt="Lebron-17"
+            /></span>
+            <div class="card-body">
+              <h5 class="card-title">
+                Nike Lebron 17 Performance Review
+              </h5>
+
+              <p class="card-text">
+                Nike set the tone with it's release of both the Lebron 16 and
+                Lebron 16 low last year. Did they exceed this standard with the
+                Lebron 17? Only one way to find out...
+              </p>
+              <a href="reviews.html" class="btn btn-primary"
+                >Full Description</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card text-white bg-secondary mb-3" style="width: 18rem;">
+            <span class="border border-dark"
+              ><img
+                src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%209.04.54%20PM.png?v=1585011921242 "
+                class="card-img-top"
+                alt="Adapt-BB"
+            /></span>
+            <div class="card-body">
+              <h5 class="card-title">Nike Adapt BB 2.0 Performance Review</h5>
+              <p class="card-text">
+                The Adapt BB 2.0 is nike new self-lacing shoe. Nike new
+                innnovative design is like no other and simply ahead of its
+                time.Hate or love it, you simply gotta respect what Nike's done
+                with the Adapt BB 2.0.
+              </p>
+              <a href="reviews.html" class="btn btn-primary"
+                >Full Description</a
+              >
+            </div>
           </div>
         </div>
       </div>
-      <div class="column">
-        <div class="card" style="width: 18rem;">
-          <span class="border border-dark"
-            ><img
-              src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%208.39.41%20PM.png?v=1585010837990 "
-              class="card-img-top"
-              alt="KD-12"
-          /></span>
-          <div class="card-body">
-            <h5 class="card-title">Nike KD 12</h5>
-            <p class="card-text">
-              Looking for ultimate comfort, minimal break-in time, and light yet
-              supportive upper? then the Nike Lebron 17 is certaintly the shoe
-              for you!
-            </p>
-            <a href="reviews.html" class="btn btn-primary">Full Description</a>
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card" style="width: 18rem;">
-          <span class="border border-dark"
-            ><img
-              src="https://cdn.glitch.com/cffc512e-ce6b-465a-b952-a979d22d6d8c%2FScreen%20Shot%202020-03-23%20at%209.04.54%20PM.png?v=1585011921242 "
-              class="card-img-top"
-              alt="Adapt-BB"
-          /></span>
-          <div class="card-body">
-            <h5 class="card-title">Nike Adapt BB 2.0</h5>
-            <p class="card-text">
-              The Adapt BB 2.0 is nike new self-lacing shoe. Nike new
-              innnovative design is like no other and simply ahead of its
-              time.Hate or love it, you simply gotta respect what Nike's done
-              with the Adapt BB 2.0.
-            </p>
-            <a href="reviews.html" class="btn btn-primary">Full Description</a>
-          </div>
-        </div>
-      </div>
+       -->
     </main>
 
-    <footer>&copy; 2020</footer>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="card-header">Other Links/Sources</h5>
+              <div class="card-body">
+                <div class="card-text">
+                  <ul class="list-inline">
+                    <li><a target="_blank" href="#">Contact Us</a></li>
+                    <li><a target="_blank" href="reviews.html">Sponsorships</a></li>
+                    <li>Jobs/Careers</li>
+                  </ul>
+                  <!--                   <ul class="list-inline">
+                    <li class="list-inline-item">Lorem ipsum</li>
+                    <li class="list-inline-item">Phasellus iaculis</li>
+                    <li class="list-inline-item">Nulla volutpat</li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <ul class="list-unstyled">
+              <li><a target="_blank" href="https://news.nike.com/news">News</a></li>
+              <li><a target="_blank" href="https://www.nike.com/promo-code">Promotions</a></li>
+              <li>
+                <a target="_blank" href="https://www.osha.gov/laws-regs"
+                  >OSHA: Laws and Regulations</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://www.nysenate.gov/legislation/bills/2019/s6282>"
+                  >NY Supply Chains Act</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <div id="note" class="note">
+              <p>
+                Note: If our site is a source or channel for a<br />
+                purchase made on an affiliated website, we may receive<br />
+                a portion of the purchase amount by way of affiliation.<br />
+                This commission is used to compensate employees, manage the
+                website, and enhance overall content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <ul class="list-inline">
+              <li>
+                <a
+                  target="_blank" href="https://twitter.com/explore"
+                  class="fa p-2 fa-twitter mx-2"
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank" href="https://www.linkedin.com/"
+                  class="fa p-2 fa-linkedin mx-2"
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank" href="https://www.youtube.com/"
+                  class="fa p-2 fa-youtube mx-2"
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank" href="https://www.instagram.com/"
+                  class="fa p-2 fa-instagram mx-2"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button style="font-size:24px">
+        Select Location <i class="fa p-2 fa-map-marker"></i>
+      </button>
+      <a
+        target="_blank" href="https://amari-sneakers.glitch.me/about.html"
+        class="btn btn-primary"
+        >Subscribe</a
+      >
+      Copyright &copy; 2020
+    </footer>
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
@@ -198,3 +389,4 @@
     ></script>
   </body>
 </html>
+<!--  -->
